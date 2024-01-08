@@ -1,0 +1,13 @@
+/* style.css */
+body {
+    background-color: #ffffff; /* A light grey background */
+}
+
+.form-group label {
+    font-weight: bold; /* Making labels bold */
+}
+
+.logo-img {
+    width: 50%; /* Adjusts to 50% of its container width */
+    height: auto; /* Maintains the aspect ratio */
+}
