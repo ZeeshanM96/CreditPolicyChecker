@@ -1,0 +1,40 @@
+{
+    "credit_policies": [
+      {
+        "name": "Policy1",
+        "rules": [
+          {
+            "type": "INCOME",
+            "condition": "< 500",
+            "action": "REJECT",
+            "reason": "LOW_INCOME"
+          },
+          {
+            "type": "DEBT_TO_INCOME_RATIO",
+            "condition": "> 0.5",
+            "action": "REJECT",
+            "reason": "HIGH_DEBT_FOR_INCOME"
+          },
+          {
+            "type": "PAYMENT_REMARKS_12M",
+            "condition": "> 0",
+            "action": "REJECT",
+            "reason": "PAYMENT_REMARKS_12M"
+          },
+          {
+            "type": "PAYMENT_REMARKS",
+            "condition": "> 1",
+            "action": "REJECT",
+            "reason": "PAYMENT_REMARKS"
+          },
+          {
+            "type": "AGE",
+            "condition": "< 18",
+            "action": "REJECT",
+            "reason": "UNDERAGE"
+          }
+        ]
+      }
+    ]
+  }
+  

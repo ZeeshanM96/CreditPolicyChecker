@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credit Policy Evaluation</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="\static\css\style.css">
+    </head>
+<body>
+    <div class="container mt-3">
+        <div class="text-center mb-4">
+            <img src="static\images\Anyfin.png" alt="Logo" class="mb-4 logo-img">
+        </div>
+        <div id="alert-placeholder"></div>
+        <h1 class="text-center mb-4">Credit Policy Evaluation Form</h1>
+        <form onsubmit="submitForm(event)" class="border p-4 shadow">
+            <div class="form-group">
+                <label for="customer_income">Customer Income:</label>
+                <input type="number" class="form-control" id="customer_income" name="customer_income" required>
+            </div>
+            <div class="form-group">
+                <label for="customer_debt">Customer Debt:</label>
+                <input type="number" class="form-control" id="customer_debt" name="customer_debt" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_remarks_12m">Payment Remarks in 12 Months:</label>
+                <input type="number" class="form-control" id="payment_remarks_12m" name="payment_remarks_12m" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_remarks">Total Payment Remarks:</label>
+                <input type="number" class="form-control" id="payment_remarks" name="payment_remarks" required>
+            </div>
+            <div class="form-group">
+                <label for="customer_age">Customer Age:</label>
+                <input type="number" class="form-control" id="customer_age" name="customer_age" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    <script src="\static\js\form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
