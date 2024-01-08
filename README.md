@@ -22,20 +22,20 @@ I designed two distinct processing approaches to accommodate user preferences:
 - Based on the processing approaches you want, pull the image:
   - For Fast Rejection:
   ```
-      docker pull zmajeed96/credit-policy-flask:0.0.1-Release
+      docker pull zmajeed96/credit-policy-flask:0.0.0-Release
   ```
   - For Detailed Rejection:
   ```
-    docker pull zmajeed96/credit-policy-checks-flask:0.0.1-Release
+    docker pull zmajeed96/credit-policy-checks-flask:0.0.0-Release
   ```
 - Run the docker container based on the processing approaches you want:
   - For Fast Rejection:
   ```
-    docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.1-Release
+    docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.0-Release
   ```
   - For Detailed Rejection:
   ```
-    docker run -d -p 5000:5000 zmajeed96/credit-policy-checks-flask:0.0.1-Release
+    docker run -d -p 5000:5000 zmajeed96/credit-policy-checks-flask:0.0.0-Release
   ```
 - Go to the browser and copy paste the following url: http://localhost:5000/
 Now, you will see the credit policy evaluation form. Feel free to play around it.
@@ -63,8 +63,8 @@ Now, you will see the credit policy evaluation form. Feel free to play around it
     ```
     - Build and run the docker container:
     ```
-        docker build -t zmajeed96/credit-policy-flask:0.0.1-Release .
-        docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.1-Release
+        docker build -t zmajeed96/credit-policy-flask:0.0.0-Release .
+        docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.0-Release
     ```
 - Go to the browser and copy paste the following url: http://localhost:5000/
 
