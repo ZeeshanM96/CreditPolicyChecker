@@ -73,6 +73,10 @@ Now, you will see the credit policy evaluation form. Feel free to play around it
 - Frontend: Html, Css, JavaScript 
 - Containerization: Docker
 
+#### Github: https://github.com/ZeeshanM96/AnyFin_Assignment/
+#### DockerHub: https://hub.docker.com/u/zmajeed96
+
+
 ### What else could be done given more time:
 We can implement a complete profile-based policy check system. It will include a web-based login structure where users' details will be stored. Based on the business requirement, we can also store the policies in the database table instead of the json file. Main feature that can be implemented is the introduction of a vulnerability assessment metric. This will evaluate the risk associated with a user based on the history of policy rejections.This approach will lead to more informed and risk-averse credit policy applications.
 
