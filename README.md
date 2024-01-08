@@ -10,7 +10,7 @@ User sends the POST request to the service via web interface, submitting details
 
 I designed two distinct processing approaches to accommodate user preferences:
 - Fast Rejection: This method is all about speed. Upon receiving the request, the service compares it against the credit policy rules. If any rule is immediately unmet, the process stops right away, and a rejection is returned, with the rejection reason. It's efficient and saves a lot of unwanted processing.
-- For Detailed Rejection: Alternatively, this approach is more detailed. It involves a thorough examination of the request against all policies, making a list of reasons for the rejection. This method ensures a complete review, providing users with a detailed reasoning of the decision.
+- For Detailed Rejection: Alternatively, this approach is more detailed. It involves a thorough examination of the request against all policies, making a list of reasons for the rejection. This method ensures a complete review, providing users with a detailed reasoning of the decision.(check feature branch for this.)
 
 ### Steps to run the service:
 ## Using Docker
