@@ -9,39 +9,68 @@ This Credit Policy Evaluation service is a web-based application dedicated to th
 User sends the POST request to the service via web interface, submitting details like income, debt, payment history, and age. Service swiftly provides definitive results, clearly indicating acceptance or rejection of the request.
 
 I designed two distinct processing approaches to accommodate user preferences:
-- Fast Rejection: This method is all about speed. Upon receiving the request, the service compares it against the credit policy rules. If any rule is immediately unmet, the process stops right away, and a rejection is returned, with the rejection reason. It's efficient and saves a lot of unwanted processing.
-- For Detailed Rejection: Alternatively, this approach is more detailed. It involves a thorough examination of the request against all policies, making a list of reasons for the rejection. This method ensures a complete review, providing users with a detailed reasoning of the decision.(check feature branch for this.)
+- Fast Rejection: This method is all about speed. Upon receiving the request, the service compares it against the credit policy rules. If any rule is immediately unmet, the process stops right away, and a rejection is returned, with the rejection reason. It's efficient and saves a lot of unwanted processing.(checkout the ```main``` branch for this.)
+- For Detailed Rejection: Alternatively, this approach is more detailed. It involves a thorough examination of the request against all policies, making a list of reasons for the rejection. This method ensures a complete review, providing users with a detailed reasoning of the decision.(checkout ```feature``` branch for this.)
 
 ### Steps to run the service:
 ## Using Docker
 - Activate your virtual env:
-
-    ```venv\Scripts\Activate.ps1```
+    ```
+      venv\Scripts\Activate.ps1
+    ```
 - Based on the processing approaches you want, pull the image:
-
-  For Fast Rejection:
-  - ```docker pull zmajeed96/credit-policy-flask:0.0.1-Release```
-  
-  For Detailed Rejection:
-  - ``` docker pull zmajeed96/credit-policy-checks-flask:0.0.2-Release```
+  - For Fast Rejection:
+  ```
+      docker pull zmajeed96/credit-policy-flask:0.0.1-Release
+  ```
+  - For Detailed Rejection:
+  ```
+    docker pull zmajeed96/credit-policy-checks-flask:0.0.1-Release
+  ```
 - Run the docker container based on the processing approaches you want:
-- 
-  For Fast Rejection:
-  - ```docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.1-Release ```
-   
-  For Detailed Rejection:
-  - ```docker run -d -p 5000:5000 zmajeed96/credit-policy-checks-flask:0.0.2-Release```
-- Go to the browser and copy paste the following url:
-  ```http://localhost:5000/```
+  - For Fast Rejection:
+  ```
+    docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.1-Release
+  ```
+  - For Detailed Rejection:
+  ```
+    docker run -d -p 5000:5000 zmajeed96/credit-policy-checks-flask:0.0.1-Release
+  ```
+- Go to the browser and copy paste the following url: http://localhost:5000/
 Now, you will see the credit policy evaluation form. Feel free to play around it.
+
+### Using GitHub
+- Activate your virtual env:
+ ```
+    venv\Scripts\Activate.ps1
+ ```
+- Git clone the repo: 
+    ```
+        git clone https://github.com/ZeeshanM96/AnyFin_Assignment.git
+        cd AnyFin_Assignment
+    ```
+
+- Based on the approaches you want, pull the image:
+    - For Fast Rejection:
+    ```
+        git checkout  main branch
+    ```
+    - For Detailed Rejection:
+    ```
+        git checkout feature_branch
+    ```
+    - Build and run the docker container:
+    ```
+        docker build -t zmajeed96/credit-policy-flask:0.0.1-Release .
+        docker run -d -p 5000:5000 zmajeed96/credit-policy-flask:0.0.1-Release
+    ```
+- Go to the browser and copy paste the following url: http://localhost:5000/
 
 ### Technology Stack:
 - Backend: Python 3.11, Flask, Virtual env
 - Frontend: Html, Css, JavaScript 
 - Containerization: Docker
 
-What else could be done given more time:
-- Complete profiles based policy check could be done. 
-- A database could be attached.
-- Vulnerability check could be implemented based on the number of times policy has been rejected for someone.
+### What else could be done given more time:
+We can implement a complete profile-based policy check system. It will include a web-based login structure where users' details will be stored. Based on the business requirement, we can also store the policies in the database table instead of the json file. Main feature that can be implemented is the introduction of a vulnerability assessment metric. This will evaluate the risk associated with a user based on the history of policy rejections.This approach will lead to more informed and risk-averse credit policy applications.
 
