@@ -14,8 +14,9 @@ I designed two distinct processing approaches to accommodate user preferences:
 
 ### Steps to run the service:
 ## Using Docker
-- Activate your virtual env:
+- Create and activate your virtual env:
     ```
+      python -m venv venv
       venv\Scripts\Activate.ps1
     ```
 - Based on the processing approaches you want, pull the image:
@@ -40,10 +41,11 @@ I designed two distinct processing approaches to accommodate user preferences:
 Now, you will see the credit policy evaluation form. Feel free to play around it.
 
 ### Using GitHub
-- Activate your virtual env:
- ```
-    venv\Scripts\Activate.ps1
- ```
+- Create and activate your virtual env:
+    ```
+      python -m venv venv
+      venv\Scripts\Activate.ps1
+    ```
 - Git clone the repo: 
     ```
         git clone https://github.com/ZeeshanM96/AnyFin_Assignment.git
