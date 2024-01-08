@@ -55,7 +55,7 @@ Now, you will see the credit policy evaluation form. Feel free to play around it
 - Based on the approaches you want, pull the image:
     - For Fast Rejection:
     ```
-        git checkout  main branch
+        git checkout main
     ```
     - For Detailed Rejection:
     ```
