@@ -1,5 +1,5 @@
-# AnyFin_Assignment
-Credit policy checker - A web based application using Flask and dockerfile
+# Credit policy checker 
+A web based application using Flask and dockerfile
 
 ### Approach for building the service:
 When I started working on the Credit Policy Evaluation service, I really wanted to make something that would make handling credit applications fast and easy. I knew it had to be simple to use, so I designed a basic frontend to make the data input really smooth. I set up the credit police rules provided in the form of assignment instructions. Based on these rules, the applications or the user input would be assessed. I tried to make sure that the whole process must be user friendly, can handle complex sets of rules and if new policy rules need to be added in the future then it can be easily done.
