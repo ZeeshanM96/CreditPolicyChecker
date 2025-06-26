@@ -46,8 +46,8 @@ Now, you will see the credit policy evaluation form. Feel free to play around it
     ```
 - Git clone the repo: 
     ```
-        git clone https://github.com/ZeeshanM96/AnyFin_Assignment.git
-        cd AnyFin_Assignment
+        git clone https://github.com/ZeeshanM96/CreditPolicyChecker.git
+        cd CreditPolicyChecker
     ```
 
 - Based on the approaches you want, pull the image:
@@ -74,10 +74,7 @@ We can implement a complete profile-based policy check system. It will include a
 - Frontend: Html, Css, JavaScript 
 - Containerization: Docker
 
-#### Github: https://github.com/ZeeshanM96/AnyFin_Assignment/
+#### Github: https://github.com/ZeeshanM96/CreditPolicyChecker
 #### DockerHub: https://hub.docker.com/u/zmajeed96
-
-### Results:
-![image](https://github.com/ZeeshanM96/AnyFin_Assignment/assets/116648836/c9d44e99-8271-47e6-b23a-ed0cd2e11e59)
 
 
